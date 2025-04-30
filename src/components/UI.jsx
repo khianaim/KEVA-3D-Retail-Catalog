@@ -124,7 +124,7 @@ export const UI = () => {
               <div className="relative bg-[#d0edf3c3] p-6 sm:p-8 rounded-xl w-full max-w-[90%] sm:max-w-sm opacity-95 shadow-lg">
                 <button
                   onClick={closeTutorial}
-                  className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-40 h-10 px-4 py-2 flex items-center justify-center text-white text-sm font-light rounded-full bg-[#471515] hover:bg-[#692021] transition-all whitespace-nowrap"
+                  className="absolute bottom-6 left-1/2 transform -translate-x-1/2 w-40 h-10 px-4 py-2 flex items-center justify-center text-white text-base sm:text-lg font-light rounded-full bg-[#471515] hover:bg-[#692021] transition-all whitespace-nowrap"
                 >
                   <span>Explore looks</span>
                 </button>
@@ -159,9 +159,9 @@ export const UI = () => {
 
           {/* Links */}
           <div className="flex items-center gap-8">
-            <div className="font-light text-[#471515] text-sm hover:font-semibold cursor-pointer">LOG IN</div>
-            <div className="font-light text-[#471515] text-sm hover:font-semibold cursor-pointer">SUBSCRIBE</div>
-            <div className="font-light text-[#471515] text-sm hover:font-semibold cursor-pointer">HELP</div>
+            <div className="font-light text-[#471515] text-base sm:text-lg hover:font-semibold cursor-pointer">LOG IN</div>
+            <div className="font-light text-[#471515] text-base sm:text-lg hover:font-semibold cursor-pointer">SUBSCRIBE</div>
+            <div className="font-light text-[#471515] text-base sm:text-lg hover:font-semibold cursor-pointer">HELP</div>
           </div>
 
           {/* Audio Player */}
@@ -182,8 +182,8 @@ export const UI = () => {
                 key={index}
                 className={`transition-all duration-300 px-2 py-1 rounded-full text-sm uppercase shrink-0 
                   ${index === page
-                    ? "text-[#471515] font-semibold shadow-[inset_4px_4px_8px_#47151584,inset_-4px_-4px_6px_#aaaaaa]"
-                    : "text-[#471515] shadow-[inset_3px_3px_6px_#47151584,inset_-3px_-3px_6px_#aaaaaa]"}
+                    ? "text-[#471515] text-base sm:text-lg font-semibold shadow-[inset_4px_4px_8px_#47151584,inset_-4px_-4px_6px_#aaaaaa]"
+                    : "text-[#471515] text-base sm:text-lg shadow-[inset_3px_3px_6px_#47151584,inset_-3px_-3px_6px_#aaaaaa]"}
                   hover:font-semibold active:shadow-[inset_6px_6px_12px_#d8d6d8d2,inset_-4px_-4px_6px_#d8d6d8d2]`}
                   onClick={() => {
                     handleButtonClick(index); // Trigger audio and page change on button click
@@ -198,8 +198,8 @@ export const UI = () => {
             <button
               className={`transition-all duration-300 px-2 py-1 rounded-full text-sm uppercase shrink-0 
                 ${page === pages.length
-                  ? "text-[#471515] font-semibold shadow-[inset_4px_4px_8px_#47151584,inset_-4px_-4px_6px_#aaaaaa]"
-                  : "text-[#471515] shadow-[inset_3px_3px_6px_#47151584,inset_-3px_-3px_6px_#aaaaaa]"}
+                  ? "text-[#471515] text-base sm:text-lg font-semibold shadow-[inset_4px_4px_8px_#47151584,inset_-4px_-4px_6px_#aaaaaa]"
+                  : "text-[#471515] text-base sm:text-lg shadow-[inset_3px_3px_6px_#47151584,inset_-3px_-3px_6px_#aaaaaa]"}
                 hover:font-semibold active:shadow-[inset_6px_6px_12px_#d8d6d8d2,inset_-4px_-4px_6px_#d8d6d8d2]`}
               onClick={() => setPage(pages.length - 1)}
             >
