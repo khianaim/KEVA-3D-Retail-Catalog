@@ -159,9 +159,9 @@ export const UI = () => {
 
           {/* Links */}
           <div className="flex items-center gap-8">
-            <div className="font-light text-[#471515] text-base sm:text-lg hover:font-semibold cursor-pointer">LOG IN</div>
-            <div className="font-light text-[#471515] text-base sm:text-lg hover:font-semibold cursor-pointer">SUBSCRIBE</div>
-            <div className="font-light text-[#471515] text-base sm:text-lg hover:font-semibold cursor-pointer">HELP</div>
+            <div className="font-light text-[#471515] text-base sm:text-md hover:font-semibold cursor-pointer">LOG IN</div>
+            <div className="font-light text-[#471515] text-base sm:text-md hover:font-semibold cursor-pointer">SUBSCRIBE</div>
+            <div className="font-light text-[#471515] text-base sm:text-md hover:font-semibold cursor-pointer">HELP</div>
           </div>
 
           {/* Audio Player */}
